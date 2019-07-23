@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Coluna Automatica, usando CSS Responsivo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+</head>
+<body>
+<style>
+	body {font-family: calibri;color:#F62459;}
+	.tutorial-tabela-css {
+	    border: #FCC9B9 1px solid;
+	}
+	.tutorial-tabela-css th {
+	    text-align: left;
+	    background: #FFB3A7;
+	    padding: 10px;
+	}
+	.tutorial-tabela-css td {
+	    border-bottom: #e1e0e0 1px solid;
+	    padding: 10px;
+	}
+	
+	@media screen and (max-width: 900px) and (min-width: 550px) {
+		.informacao-5{
+			display:none;
+		}
+	}
+	
+	@media screen and (max-width: 550px) {
+		.informacao-5{
+			display:none;
+		}
+		.informacao-4{
+			display:none;
+		}
+	}
+	
+	@media screen and (max-width: 300px) {
+		.informacao-5{
+			display:none;
+		}
+		.informacao-4{
+			display:none;
+		}
+		.informacao-3{
+			display:none;
+		}
+		.informacao-2{
+			display:none;
+		}
+	
+	}
+	</style>
+<div class="container">
+	<table id="contact-detail" class="tutorial-tabela-css" cellspacing="0" width="100%">
+	<thead>
+		<tr>
+			<th class="informacao-1" width="15%">Nome</th>
+			<th class="informacao-2" width="15%">Sobrenome</th>
+			<th class="informacao-3" width="15%">Estado</th>
+			<th class="informacao-4" width="10%">Nascimento</th>
+			<th class="informacao-5" width="15%">Falescimento</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="informacao-1">Maria</td>
+			<td class="informacao-2">Bonita</td>
+			<td class="informacao-3">Bahia</td>
+			<td class="informacao-4">08/03/1911</td>
+			<td class="informacao-5">28/07/1938</td>
+		</tr>
+		<tr>
+			<td class="informacao-1">Princesa</td>
+			<td class="informacao-2">Isabel</td>
+			<td class="informacao-3">Rio de Janeiro</td>
+			<td class="informacao-4">29/07/1846</td>
+			<td class="informacao-5">14/11/1921</td>
+		</tr>		
+		<tr>				
+			<td class="informacao-1">Maria</td>
+			<td class="informacao-2">Quiteria</td>
+			<td class="informacao-3">Bahia</td>
+			<td class="informacao-4">27/07/1792</td>
+			<td class="informacao-5">21/08/1853</td>
+		</tr>		
+		<tr>
+			<td class="informacao-1">Chiquinha</td>
+			<td class="informacao-2">Gonzaga</td>
+			<td class="informacao-3">Rio de Janeiro</td>
+			<td class="informacao-4">17/10/1847</td>
+			<td class="informacao-5">28/02/1935</td>
+		</tr>
+			<tr>
+			<td class="informacao-1">Tarsila</td>
+			<td class="informacao-2">Amaral</td>
+			<td class="informacao-3">São Paulo</td>
+			<td class="informacao-4">01/09/1886</td>
+			<td class="informacao-5">17/01/1973</td>
+        </tr>
+		
+		
+		</tr>
+	</tbody>
+</table>
+	</div>
+</html>
